@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container h1{
+        text-align: center;
+        background-color: aquamarine;
+    }
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 >JavaScript</h1>
+    <p>Basic concepts of if else statement</p>
+</div>
+
+<script>
+    // var a = prompt("Enter the character")
+
+    // if( a == "a"){
+    //     console.log();
+    // }
+    // else if() {
+    //     console.log('it is not number');
+    // }
+
+
+
+// Capital Number
+
+var integral =  +prompt("Enter the 1st integral for comparision")
+var otherintegeral = +prompt("Enter the  2nd integral for comparision")
+if(integral > otherintegeral){
+    console.log(integral );
+}
+else if(otherintegeral > integral){
+    console.log(otherintegeral);
+}
+else if (integral == otherintegeral){
+    console.log(integral , `=` , otherintegeral);
+}
+else{
+    console.log("write the integral");
+}
+
+// Positive Negitive or zero
+
+var num = +prompt("Enter the Number")
+if(num < 0){
+    console.log("This is a negative number");
+}
+else if (num > 0){
+    console.log("This is a Positive number");
+}
+else{
+    console.log("The number is 0");
+}
+
+// Vowel finder
+
+var vowel = prompt("enter the character")
+if(vowel === 'a' || vowel === 'e' || vowel === 'i'||vowel === 'o'||vowel === 'u' ){
+    document.write(vowel + " is a vowel <br>")
+}
+else{
+    document.write( vowel +  ' is not vowel <br>')
+}
+
+// Password
+
+var mainPassword = prompt("Enter the password")
+var Password2 = prompt("Verify your password")
+
+ if(mainPassword == Password2){
+    alert("The password you enter is matches with the original password");
+ }
+else if(mainPassword !== Password2) {
+     alert('Incorrect Password' );
+}
+else if ( Password2 == " " || mainPassword == " "){
+    alert("Please enter the password");
+}
+
+//  greeting 
+
+var greeting
+var hour = +prompt('Enter the hour in  24 hours format ')
+if(hour >= 8  && hour <= 16 ){
+    greeting = "Good Day"
+}
+else if (hour >= 16 && hour <= 18){
+    greeting = "Good Evening"   
+}
+else{
+    greeting = "Please write the correct time "
+}
+ document.write(greeting)
+
+// Clock 
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
